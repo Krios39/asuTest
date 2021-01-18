@@ -1,0 +1,42 @@
+.personBox {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    border-bottom: 1px #000000 solid;
+    height: 40px;
+    align-items: center;
+}
+.titleBox{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    background: #39f;
+    padding-left: 10px;
+}
+.nameBox{
+    display: flex;
+    justify-content: flex-start;
+    width:33%;
+    margin-left: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.iconButton{
+    width:34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3px;
+    border: 1px #e8e8e8 solid;
+}
+
+.iconButton:hover{
+    background: #f8f8f8;
+}
+
+.iconButton:active{
+    background: #e8e8e8;
+}

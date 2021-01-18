@@ -1,0 +1,77 @@
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modalWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 90%;
+    min-width: 20%;
+    border-radius: 5px;
+}
+
+.input {
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    font-family: "Roboto Slab", serif;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 24px;
+    width: 90%;
+}
+
+.modalHeader {
+    font-family: "Roboto Slab", serif;
+    height: 30px;
+    padding: 15px 20px;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.buttonBox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.modalButton {
+    font-size: 18px;
+    background: #fff;
+    border: 0;
+    margin-left: 10px;
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+}
+
+.modalButton:hover {
+    background: #f8f8f8;
+}
+
+.modalButton:active {
+    background: #e8e8e8;
+}
