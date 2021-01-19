@@ -19,13 +19,17 @@ function App() {
       .then((resp) => {
         setPersons(resp.data);
       }).catch((e) => {
-        if (e.response.status === 404) {
+        if (!e.response)
+          addToast('Отсутвствет соеденение с сервером', {
+            appearance: 'error',
+            autoDismiss: true,
+          });
+        else if (e.response.status === 404) {
           addToast('404 Адрес не найден', {
             appearance: 'error',
             autoDismiss: true,
           });
-        }
-        if (e.response.status === 500) {
+        } else if (e.response.status === 500) {
           addToast('Ошибка сервера, повторите попытку позже', {
             appearance: 'error',
             autoDismiss: true,
